@@ -1,6 +1,7 @@
 import './style.css';
-import headerButtons from './headerButtons';
-function component(){
-    return console.log("asd")
+import {Main} from './Main';
+
+function MainComponent(){
+    Main()
 }
-document.body.appendChild(component());
+document.body.appendChild(MainComponent());

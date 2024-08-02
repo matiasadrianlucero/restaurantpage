@@ -1,0 +1,133 @@
+body {
+    color: white;
+    background-color: black;    
+    margin: 0;
+}
+.BURGAH{
+    text-shadow: 1px 0px 44px rgba(255,255,255,0.65);
+    text-align: center;
+    font-size: 5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navigationContainer{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+button{
+    background: none;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: 2px solid white;
+    margin: 1rem;
+    color: gray;
+    transition: all .3s;
+    background-color: black;
+}
+button:hover {
+    color: white;
+    border: 2px solid red;
+}
+
+.menuBody{
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    color: black;
+    
+}
+.menuMainDiv{
+    width: 70%;
+
+    background-color: rgb(222, 198, 166);
+    color: black;
+    padding: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    font-weight: bolder;
+    grid-template-areas:
+    "wordTitle wordTitle wordTitle wordTitleExample wordTitleExample"
+    "wordType wordType wordType burgahImg burgahImg"
+    "descriptionText descriptionText descriptionText  burgahImg burgahImg"
+    "locationText locationText locationText locationText locationText"
+}
+.menuMainDiv>h2{
+margin: 0;
+}
+.menuMainDiv>h3{
+    margin-top: 1rem;
+    }
+.wordTitle{
+    font-weight: 900;
+    grid-area: wordTitle;
+    font-size: 2rem;
+    font-style: italic;
+    border-bottom: dotted 1px black;
+}
+.wordType{
+    grid-area: wordType;
+    color: gray;
+}
+.descriptionText{
+    grid-area: descriptionText;
+}
+.wordTitleExample{
+    grid-area: wordTitleExample;
+}
+.burgahImg{
+    grid-area: burgahImg;
+    height: 80%;
+    width: 80%;
+}
+.locationText{
+    text-align: center;
+    grid-area: locationText;
+    border-top: 1px gray dashed;
+    padding-top: 3rem;   
+   
+}
+.aboutMainDiv{
+    width: 50%;
+    display: grid;
+    background-color: rgb(222, 198, 166);
+    color: black;
+    padding: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    grid-template-areas: "divHours divBurgahs";
+}
+.divHours{
+    grid-area: divHours;
+}
+.divBurgahs{
+    grid-area: divBurgahs;
+    border-left: 2px solid black;
+    padding-left: 5rem;
+}
+.aboutMainDiv h2{
+    font-style: italic;
+    text-decoration: underline;
+}
+.burgah1div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.burgah1{
+    font-weight: bold;
+    margin-right: 0px;
+    text-align: left;
+}
+.brugah1dots{
+    flex: 1;
+    border-bottom: 2px dotted #999;
+    margin: 0.6em 5px 0;
+}
+.brugah1price{
+    font-weight: bold;
+    text-align: right;
+}
